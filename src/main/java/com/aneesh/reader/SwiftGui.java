@@ -12,14 +12,14 @@ public class SwiftGui extends JFrame {
     //singleton design
 
     private static SwiftGui guiSingleton = null;
-    private static MessageTable table;
+    private static JTable table;
     private static int guiWidth = 600;
     private static int guiHeight = 200;
 
     private SwiftGui(){
     }
 
-    static void buildTable(){
+    public void buildTable(){
         guiSingleton.setLayout(new FlowLayout());
 
         String[] columnNames = {"Filename", "Eye", "Gender"};
@@ -28,11 +28,12 @@ public class SwiftGui extends JFrame {
                 {"Aneesh", "mistry", "male"},{"J", "k", "female"}
         };
 
-        table = new MessageTable(data, columnNames);
+        table = new JTable(data, columnNames);
         table.setPreferredScrollableViewportSize(new Dimension(500  ,50));
         table.setFillsViewportHeight(true);
 
-        table.add(new JScrollPane(table));
+        JScrollPane jp = new JScrollPane(table);
+        add(jp);
 
         guiSingleton.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         guiSingleton.setSize(guiWidth,guiHeight);
@@ -68,12 +69,7 @@ public class SwiftGui extends JFrame {
 
     }
 
-
-    public static int getGuiWidth() {
-        return guiWidth;
-    }
-
-    public static int getGuiHeight() {
-        return guiHeight;
+    public static JTable getTable() {
+        return table;
     }
 }

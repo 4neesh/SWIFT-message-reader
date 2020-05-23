@@ -15,6 +15,7 @@ public class SwiftGuiTest {
 
     @Test
     public void guiInstanceExists(){
+
         assertFalse(SwiftGui.getGuiSingleton()==null);
     }
 

@@ -17,12 +17,14 @@ public class SwiftGui extends JFrame {
     private static int guiHeight = 200;
 
     private SwiftGui(){
+
+
     }
 
     public void buildTable(){
         guiSingleton.setLayout(new FlowLayout());
 
-        String[] columnNames = {"Filename", "Eye", "Gender"};
+        String[] columnNames = {"Filenasme", "Eye", "Gender"};
 
         Object[][] data = {
                 {"Aneesh", "mistry", "male"},{"J", "k", "female"}
@@ -49,6 +51,8 @@ public class SwiftGui extends JFrame {
     }
 
     public void populateTable() {
+
+
         try {
             InputStream is = new FileInputStream("hello.txt");
             BufferedReader buf = new BufferedReader(new InputStreamReader(is));

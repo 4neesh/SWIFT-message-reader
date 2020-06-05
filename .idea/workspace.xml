@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d34c6e-dc9e-472c-8335-79889c38ba79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/MessageTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/MessageTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/aneesh/reader/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/aneesh/reader/ApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/reader/SwiftGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/reader/SwiftGui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/ReaderTool.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/aneesh/reader/ApplicationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/aneesh/reader/ApplicationTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,17 +27,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="225">
+              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="390">
+              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2025#2026#0" expanded="true" />
@@ -45,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/aneesh/reader/ApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+            <state relative-caret-position="-10">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/aneesh/reader/SwiftGuiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="270">
               <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,11 +97,11 @@
         <option value="$PROJECT_DIR$/hello.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftMessage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/aneesh/reader/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/MessageTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/aneesh/reader/SwiftGuiTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/aneesh/reader/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java" />
       </list>
     </option>
   </component>
@@ -110,11 +112,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="468" />
-    <option name="y" value="7" />
-    <option name="width" value="1140" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -122,71 +123,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReaderTool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReaderTool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReaderTool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReaderTool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReaderTool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReaderTool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReaderTool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReaderTool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
+              <item name="SWIFT-message-reader" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EmailTest" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591342565111" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -200,10 +155,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationTest">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.aneesh.reader.Application" />
-      <module name="ReaderTool" />
+      <module name="SwiftReaderMvn" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.aneesh.reader.*" />
@@ -215,7 +172,7 @@
       </method>
     </configuration>
     <configuration name="ApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReaderTool" />
+      <module name="SwiftReaderMvn" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.aneesh.reader.*" />
@@ -224,7 +181,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.aneesh.reader" />
       <option name="MAIN_CLASS_NAME" value="com.aneesh.reader.ApplicationTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -255,16 +213,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.aneesh.reader" />
       <option name="MAIN_CLASS_NAME" value="com.aneesh.reader.SwiftGuiTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.ApplicationTest" />
         <item itemvalue="JUnit.ApplicationTest.tableBuilt" />
-        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.SwiftGuiTest" />
       </list>
     </recent_temporary>
@@ -283,9 +240,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SwiftGuiTest - 2020.05.23 at 11h 14m 22s.xml">
-      <configuration name="SwiftGuiTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SwiftGuiTest - 2020.05.23 at 11h 16m 09s.xml">
       <configuration name="SwiftGuiTest" configurationId="JUnit" />
     </history-entry>
@@ -313,13 +267,16 @@
     <history-entry file="ApplicationTest - 2020.05.23 at 21h 12m 18s.xml">
       <configuration name="ApplicationTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ApplicationTest - 2020.06.05 at 08h 00m 09s.xml">
+      <configuration name="ApplicationTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49757674" visible="true" weight="0.12579957" />
-      <window_info id="Structure" order="1" sideWeight="0.5024233" side_tool="true" visible="true" weight="0.12579957" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49579832" visible="true" weight="0.12673056" />
+      <window_info id="Structure" order="1" sideWeight="0.5042017" side_tool="true" visible="true" weight="0.12673056" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -327,7 +284,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32919955" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -377,7 +334,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/aneesh/reader/SwiftGuiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="270">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -387,31 +344,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="225">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/aneesh/reader/ApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="-10">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2025#2026#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
           </folding>
         </state>
       </provider>

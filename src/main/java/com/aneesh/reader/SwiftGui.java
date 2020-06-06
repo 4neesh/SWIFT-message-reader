@@ -14,29 +14,32 @@ public class SwiftGui extends JFrame {
     private static int guiHeight = 200;
     private static final String NO_FILE_MESSAGE= "No files to display";
     String[] columnNames;
-
+    String [][] tableData;
     private SwiftGui(){
     }
 
     public void buildTable(){
+
         guiSingleton.setLayout(new FlowLayout());
 
+        defineColumnNames();
+
+        populateTable();
+
+        table = new JTable(tableData, columnNames);
+
+
+
+        setDefaultGuiProperties();
+
+
+    }
+
+    private void defineColumnNames() {
         columnNames = new String[3];
         columnNames[0] = "Filename";
         columnNames[1] = "Name";
         columnNames[2] = "Colour";
-
-
-        String[][] data = populateTable();
-
-        table = new JTable(data, columnNames);
-        table.setPreferredScrollableViewportSize(new Dimension(500  ,50));
-        table.setFillsViewportHeight(true);
-
-        JScrollPane jp = new JScrollPane(table);
-        add(jp);
-        setDefaultGuiProperties();
-
 
     }
 
@@ -47,14 +50,18 @@ public class SwiftGui extends JFrame {
         return guiSingleton;
     }
 
-    private static void setDefaultGuiProperties() {
+    private void setDefaultGuiProperties() {
         guiSingleton.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         guiSingleton.setSize(guiWidth,guiHeight);
         guiSingleton.setVisible(true);
         guiSingleton.setTitle("SWIFT Reader");
+        JScrollPane jp = new JScrollPane(table);
+        add(jp);
+        table.setPreferredScrollableViewportSize(new Dimension(500  ,50));
+        table.setFillsViewportHeight(true);
     }
 
-    public String[][] populateTable() {
+    public void populateTable() {
 
 
         String[][] fileContent;
@@ -76,7 +83,7 @@ public class SwiftGui extends JFrame {
         }
 
 
-        return fileContent;
+        tableData = fileContent;
 
 //        try {
 //            InputStream is = new FileInputStream("hello.txt");

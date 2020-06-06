@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d34c6e-dc9e-472c-8335-79889c38ba79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MT940/fileOne.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MT940/fileThree.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MT940/fileTwo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/gui/GuiBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/reader/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/reader/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/reader/SwiftGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/reader/SwiftGui.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="69" column="41" lean-forward="true" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+            <state relative-caret-position="780">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2443#2444#0" expanded="true" />
@@ -162,7 +153,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591388687635" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591428609617" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -412,8 +403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="69" column="41" lean-forward="true" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+        <state relative-caret-position="780">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2443#2444#0" expanded="true" />

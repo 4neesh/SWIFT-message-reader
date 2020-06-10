@@ -20,52 +20,15 @@ public class SwiftGui extends JFrame {
 
     public void buildTable(){
 
-        guiSingleton.setLayout(new FlowLayout());
+        setLayout(new FlowLayout());
 
         defineColumnNames();
 
-        populateTable();
-
-        table = new JTable(tableData, columnNames);
-
-
-
-        setDefaultGuiProperties();
-
-
     }
 
-    private void defineColumnNames() {
-        columnNames = new String[3];
-        columnNames[0] = "Filename";
-        columnNames[1] = "Name";
-        columnNames[2] = "Colour";
-
-    }
-
-    public static synchronized SwiftGui getGuiSingleton(){
-        if(guiSingleton == null){
-            guiSingleton = new SwiftGui();
-        }
-        return guiSingleton;
-    }
-
-    private void setDefaultGuiProperties() {
-        guiSingleton.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        guiSingleton.setSize(guiWidth,guiHeight);
-        guiSingleton.setVisible(true);
-        guiSingleton.setTitle("SWIFT Reader");
-        JScrollPane jp = new JScrollPane(table);
-        add(jp);
-        table.setPreferredScrollableViewportSize(new Dimension(500  ,50));
-        table.setFillsViewportHeight(true);
-    }
-
-    public void populateTable() {
-
+    public void buildData(File[] mt940Dir) {
 
         String[][] fileContent;
-        File[] mt940Dir = new File("MT940").listFiles();
 
         if(mt940Dir.length == 0){
             fileContent = new String[1][1];
@@ -82,26 +45,47 @@ public class SwiftGui extends JFrame {
             }
         }
 
-
         tableData = fileContent;
 
-//        try {
-//            InputStream is = new FileInputStream("hello.txt");
-//            BufferedReader buf = new BufferedReader(new InputStreamReader(is));
-//            String line = buf.readLine();
-//            StringBuilder sb = new StringBuilder();
-//            while (line != null) {
-//                sb.append(line).append("\n");
-//                line = buf.readLine();
-//            }
-//
-//            String fileAsString = sb.toString();
-//            System.out.println("Contents : " + fileAsString);
-//        }
-//        catch(Exception e){
-//            System.out.println("Caught exception: " + e.getMessage());
-//        }
 
+    }
+
+    private void defineColumnNames() {
+        columnNames = new String[3];
+        columnNames[0] = "Filename";
+        columnNames[1] = "Name";
+        columnNames[2] = "Colour";
+
+    }
+
+    public static synchronized SwiftGui getGuiSingleton(){
+        if(guiSingleton == null){
+            guiSingleton = new SwiftGui();
+        }
+
+        return guiSingleton;
+    }
+
+    private void setDefaultGuiProperties() {
+        guiSingleton.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        guiSingleton.setSize(guiWidth,guiHeight);
+        guiSingleton.setVisible(true);
+        guiSingleton.setTitle("SWIFT Reader");
+
+
+    }
+
+    public void buildTableView() {
+
+
+        table = new JTable(tableData, columnNames);
+
+        table.setPreferredScrollableViewportSize(new Dimension(500  ,50));
+        table.setFillsViewportHeight(true);
+        JScrollPane jScrollPane = new JScrollPane(table);
+        add(jScrollPane);
+
+        setDefaultGuiProperties();
 
     }
 

@@ -2,8 +2,8 @@ package com.aneesh.reader;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.mockito.Mockito;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
 public class SwiftGuiTest {
@@ -22,6 +22,7 @@ public class SwiftGuiTest {
 
     @Test
     public void guiInstanceNotExists(){
+
 
 
     }

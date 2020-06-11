@@ -18,7 +18,6 @@ public class Application {
         System.out.println(new Date() + "   Building table in GUI.");
         swiftGui.buildTable();
 
-        swiftGui.buildData(mt940Dir);
 
         System.out.println(new Date() + "   Populating table.");
         swiftGui.buildTableView();

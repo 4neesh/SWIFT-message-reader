@@ -12,7 +12,7 @@ public class SwiftGui extends JFrame {
     private static JTable table;
     private static int guiWidth = 600;
     private static int guiHeight = 200;
-    private static final String NO_FILE_MESSAGE= "No files to display";
+    public static final String NO_FILE_MESSAGE= "No files to display";
     String[] columnNames;
     String [][] tableData;
     private SwiftGui(){
@@ -26,7 +26,7 @@ public class SwiftGui extends JFrame {
 
     }
 
-    public void buildData(File[] mt940Dir) {
+    public void buildData(MessageType[] mt940Dir) {
 
         String[][] fileContent;
 

@@ -9,4 +9,9 @@ public class MessageType extends File {
         super(pathname);
     }
 
+    public MessageType[] getMessages(){
+
+        return null;
+
+    }
 }

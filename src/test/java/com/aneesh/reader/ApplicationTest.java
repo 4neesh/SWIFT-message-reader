@@ -2,11 +2,11 @@ package com.aneesh.reader;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import javax.swing.*;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class ApplicationTest {
 
@@ -37,7 +37,18 @@ public class ApplicationTest {
     @Test
     public void emptyTableIfNoFiles(){
 
+        MessageType[] emptyMessage = new MessageType[0];
 
+        //given
+        MessageType mt = Mockito.mock(MessageType.class);
+        Mockito.when(mt.getMessages()).thenReturn(emptyMessage);
+
+        //when
+        swiftGui.buildData(mt.getMessages());
+
+        //then
+        assertEquals(swiftGui.tableData[0][0], swiftGui.NO_FILE_MESSAGE);
+        
 
     }
 

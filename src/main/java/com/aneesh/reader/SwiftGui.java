@@ -35,14 +35,12 @@ public class SwiftGui extends JFrame {
             fileContent[0][0] = NO_FILE_MESSAGE;
         }
         else{
-            fileContent = new String[3][mt940Dir.length];
+            fileContent = new String[mt940Dir.length][3];
             fileContent[0][0] = "Aneesh";
             fileContent[0][1] = "Mistry";
             fileContent[0][2] = "Test";
 
-            for(File f : mt940Dir){
-                System.out.println(f.getAbsolutePath());
-            }
+
         }
 
         tableData = fileContent;

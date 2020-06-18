@@ -3,9 +3,11 @@ package com.aneesh.reader;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.mockito.Mockito;
-import sun.plugin2.message.Message;
 
 import javax.swing.*;
+
+import java.io.File;
+import java.io.IOException;
 
 import static org.junit.Assert.*;
 
@@ -25,22 +27,22 @@ public class ApplicationTest {
     @Test
     public void guiExists(){
 
-        assertTrue(swiftGui != null);
+        assertTrue("swift gui is null when instantiated",swiftGui != null);
 
     }
 
 
     @Test
-    public void emptyTableIfNoFiles(){
+    public void emptyTableIfNoFiles() throws IOException {
 
-        MessageType[] emptyMessage = new MessageType[0];
+        File[] emptyMessage = new MessageType[0];
 
         //given
         MessageType mt = Mockito.mock(MessageType.class);
-        Mockito.when(mt.getMessages()).thenReturn(emptyMessage);
+        Mockito.when(mt.getMessages(".")).thenReturn(emptyMessage);
 
         //when
-        swiftGui.buildData(mt.getMessages());
+        swiftGui.buildData(mt.getMessages("."));
 
         //then
         assertEquals(swiftGui.tableData[0][0], swiftGui.NO_FILE_MESSAGE);
@@ -48,20 +50,30 @@ public class ApplicationTest {
 
     }
 
-    @Test
-    public void populatedTableIfFiles(){
+    //@Test
+    public void populatedTableIfFiles() throws IOException {
 
 
-        MessageType[] populatedMessage = new MessageType[1];
+        File[] populatedMessage = new File[1];
+
 
         MessageType mt = Mockito.mock(MessageType.class);
-        Mockito.when(mt.getMessages()).thenReturn(populatedMessage);
+        Mockito.when(mt.getMessages(".")).thenReturn(populatedMessage);
 
-        swiftGui.buildData(mt.getMessages());
+        swiftGui.buildData(mt.getMessages("."));
 
         assertEquals(swiftGui.tableData[0][0], "Aneesh");
 
 
     }
 
+    @Test
+    public void returnFileOneContent(){
+
+        File[] populatedMessage = new File[1];
+        populatedMessage[0] = new File("MT940/fileOne.txt");
+
+
+
+    }
 }

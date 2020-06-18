@@ -11,7 +11,7 @@ public class SwiftGui extends JFrame {
     private static SwiftGui guiSingleton = null;
     private static JTable table;
     private static int guiWidth = 600;
-    private static int guiHeight = 200;
+    private static int guiHeight = 400;
     public static final String NO_FILE_MESSAGE= "No files to display";
     String[] columnNames;
     String [][] tableData;
@@ -26,7 +26,7 @@ public class SwiftGui extends JFrame {
 
     }
 
-    public void buildData(MessageType[] mt940Dir) {
+    public void buildData(File[] mt940Dir) throws IOException {
 
         String[][] fileContent;
 
@@ -35,11 +35,24 @@ public class SwiftGui extends JFrame {
             fileContent[0][0] = NO_FILE_MESSAGE;
         }
         else{
-            fileContent = new String[mt940Dir.length][3];
-            fileContent[0][0] = "Aneesh";
-            fileContent[0][1] = "Mistry";
-            fileContent[0][2] = "Test";
+            fileContent = new String[mt940Dir.length][7];
 
+            int i = 0;
+            for(File f: mt940Dir){
+                BufferedReader reader = new BufferedReader(new FileReader(f.getAbsolutePath()));
+                String line = reader.readLine();
+                int j = 0;
+
+                fileContent[i][j] = f.getName();
+                j++;
+                while(line != null){
+
+                    fileContent[i][j] = line;
+                    j++;
+                    line = reader.readLine();
+                }
+                i++;
+            }
 
         }
 
@@ -49,10 +62,14 @@ public class SwiftGui extends JFrame {
     }
 
     private void defineColumnNames() {
-        columnNames = new String[3];
+        columnNames = new String[7];
         columnNames[0] = "Filename";
-        columnNames[1] = "Name";
-        columnNames[2] = "Colour";
+        columnNames[1] = "Account";
+        columnNames[2] = "Sequence";
+        columnNames[3] = "Opening";
+        columnNames[4] = "Closing";
+        columnNames[5] = "BIC 52a";
+        columnNames[6] = "BIC 57a";
 
     }
 
@@ -77,8 +94,8 @@ public class SwiftGui extends JFrame {
 
 
         table = new JTable(tableData, columnNames);
-
-        table.setPreferredScrollableViewportSize(new Dimension(500  ,50));
+        table.setAutoCreateRowSorter(true);
+        table.setPreferredScrollableViewportSize(new Dimension(500  ,300));
         table.setFillsViewportHeight(true);
         JScrollPane jScrollPane = new JScrollPane(table);
         add(jScrollPane);

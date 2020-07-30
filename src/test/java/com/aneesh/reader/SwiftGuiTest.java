@@ -1,8 +1,8 @@
 package com.aneesh.reader;
 
+import com.aneesh.gui.SwiftGui;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import static org.junit.Assert.assertFalse;
 

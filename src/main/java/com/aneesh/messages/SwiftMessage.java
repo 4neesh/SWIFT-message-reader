@@ -1,4 +1,4 @@
-package com.aneesh.reader;
+package com.aneesh.messages;
 
 public class SwiftMessage {
 

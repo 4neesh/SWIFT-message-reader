@@ -1,4 +1,4 @@
-package com.aneesh.gui;
+package com.aneesh.builder;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,7 +9,7 @@ public class GuiBuilder {
     public GuiBuilder(){
 
         Properties prop = new Properties();
-        InputStream input = getClass().getClassLoader().getResourceAsStream("congig.properties");
+        InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties");
 
         if(input != null){
             try {

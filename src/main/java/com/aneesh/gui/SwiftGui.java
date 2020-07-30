@@ -1,4 +1,4 @@
-package com.aneesh.reader;
+package com.aneesh.gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,6 +15,7 @@ public class SwiftGui extends JFrame {
     public static final String NO_FILE_MESSAGE= "No files to display";
     String[] columnNames;
     String [][] tableData;
+
     private SwiftGui(){
     }
 
@@ -64,12 +65,12 @@ public class SwiftGui extends JFrame {
     private void defineColumnNames() {
         columnNames = new String[7];
         columnNames[0] = "Filename";
-        columnNames[1] = "Account";
-        columnNames[2] = "Sequence";
-        columnNames[3] = "Opening";
-        columnNames[4] = "Closing";
-        columnNames[5] = "BIC 52a";
-        columnNames[6] = "BIC 57a";
+        columnNames[1] = "Account (25)";
+        columnNames[2] = "Sequence (28c)";
+        columnNames[3] = "Opening (60a)";
+        columnNames[4] = "Closing (64)";
+        columnNames[5] = "BIC (52a)";
+        columnNames[6] = "BIC (57a)";
 
     }
 
@@ -105,6 +106,8 @@ public class SwiftGui extends JFrame {
     }
 
     public static JTable getTable() {
+
         return table;
     }
 }
+

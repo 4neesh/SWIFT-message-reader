@@ -1,5 +1,7 @@
 package com.aneesh.gui;
 
+import com.aneesh.builder.TableBuilder;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
@@ -13,8 +15,9 @@ public class SwiftGui extends JFrame {
     private static int guiWidth = 600;
     private static int guiHeight = 400;
     public static final String NO_FILE_MESSAGE= "No files to display";
-    String[] columnNames;
     String [][] tableData;
+    private static TableBuilder tableBuilder;
+    private String[] columnNames;
 
     private SwiftGui(){
     }
@@ -23,7 +26,7 @@ public class SwiftGui extends JFrame {
 
         setLayout(new FlowLayout());
 
-        defineColumnNames();
+        columnNames = tableBuilder.defineColumnNames();
 
     }
 
@@ -62,21 +65,12 @@ public class SwiftGui extends JFrame {
 
     }
 
-    private void defineColumnNames() {
-        columnNames = new String[7];
-        columnNames[0] = "Filename";
-        columnNames[1] = "Account (25)";
-        columnNames[2] = "Sequence (28c)";
-        columnNames[3] = "Opening (60a)";
-        columnNames[4] = "Closing (64)";
-        columnNames[5] = "BIC (52a)";
-        columnNames[6] = "BIC (57a)";
 
-    }
 
     public static synchronized SwiftGui getGuiSingleton(){
         if(guiSingleton == null){
             guiSingleton = new SwiftGui();
+            tableBuilder = new TableBuilder();
         }
 
         return guiSingleton;

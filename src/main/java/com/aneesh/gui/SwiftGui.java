@@ -1,5 +1,8 @@
 package com.aneesh.gui;
 
+import com.aneesh.builder.TableBuilder;
+import com.aneesh.reader.MessageTable;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
@@ -9,12 +12,11 @@ public class SwiftGui extends JFrame {
     //singleton design
 
     private static SwiftGui guiSingleton = null;
-    private static JTable table;
+    public static JTable table;
     private static int guiWidth = 600;
     private static int guiHeight = 400;
     public static final String NO_FILE_MESSAGE= "No files to display";
-    String[] columnNames;
-    String [][] tableData;
+    public static TableBuilder tableBuilder;
 
     private SwiftGui(){
     }
@@ -23,7 +25,25 @@ public class SwiftGui extends JFrame {
 
         setLayout(new FlowLayout());
 
-        defineColumnNames();
+       tableBuilder.defineColumnNames();
+
+    }
+
+    public static synchronized SwiftGui getGuiSingleton(){
+        if(guiSingleton == null){
+            guiSingleton = new SwiftGui();
+            tableBuilder = new TableBuilder();
+        }
+
+        return guiSingleton;
+    }
+
+    public void setDefaultGuiProperties() {
+
+        guiSingleton.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        guiSingleton.setSize(guiWidth,guiHeight);
+        guiSingleton.setVisible(true);
+        guiSingleton.setTitle("SWIFT Reader");
 
     }
 
@@ -57,57 +77,14 @@ public class SwiftGui extends JFrame {
 
         }
 
-        tableData = fileContent;
+        tableBuilder.tableData = fileContent;
 
 
     }
 
-    private void defineColumnNames() {
-        columnNames = new String[7];
-        columnNames[0] = "Filename";
-        columnNames[1] = "Account (25)";
-        columnNames[2] = "Sequence (28c)";
-        columnNames[3] = "Opening (60a)";
-        columnNames[4] = "Closing (64)";
-        columnNames[5] = "BIC (52a)";
-        columnNames[6] = "BIC (57a)";
-
-    }
-
-    public static synchronized SwiftGui getGuiSingleton(){
-        if(guiSingleton == null){
-            guiSingleton = new SwiftGui();
-        }
-
-        return guiSingleton;
-    }
-
-    private void setDefaultGuiProperties() {
-        guiSingleton.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        guiSingleton.setSize(guiWidth,guiHeight);
-        guiSingleton.setVisible(true);
-        guiSingleton.setTitle("SWIFT Reader");
 
 
-    }
-
-    public void buildTableView() {
 
 
-        table = new JTable(tableData, columnNames);
-        table.setAutoCreateRowSorter(true);
-        table.setPreferredScrollableViewportSize(new Dimension(500  ,300));
-        table.setFillsViewportHeight(true);
-        JScrollPane jScrollPane = new JScrollPane(table);
-        add(jScrollPane);
-
-        setDefaultGuiProperties();
-
-    }
-
-    public static JTable getTable() {
-
-        return table;
-    }
 }
 

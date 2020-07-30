@@ -4,13 +4,12 @@ import com.aneesh.messages.MessageType;
 import com.aneesh.gui.SwiftGui;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Date;
 
 public class Application {
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
 
         System.out.println(new Date() + "   Creating the GUI...");
         SwiftGui swiftGui = SwiftGui.getGuiSingleton();
@@ -19,10 +18,10 @@ public class Application {
         File[] mt940Dir = new MessageType("").getMessages(".");
 
 
-        System.out.println(new Date() + "   Building the table in GUI...");
+        System.out.println(new Date() + "   Creating the table frame...");
         swiftGui.buildTable();
 
-        swiftGui.tableBuilder.buildData(mt940Dir);
+        swiftGui.tableBuilder.populateTable(mt940Dir);
 
         System.out.println(new Date() + "   Populating table with file information...");
         swiftGui.tableBuilder.buildTableView();

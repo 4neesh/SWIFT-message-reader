@@ -4,10 +4,7 @@ import com.aneesh.gui.SwiftGui;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class TableBuilder {
 
@@ -30,7 +27,21 @@ public class TableBuilder {
         return columnNames;
     }
 
-    public void buildData(File[] mt940Dir) throws IOException {
+    public void buildTableView() {
+
+        table = new JTable(tableData, columnNames);
+        table.setAutoCreateRowSorter(true);
+        table.setPreferredScrollableViewportSize(new Dimension(500  ,300));
+        table.setFillsViewportHeight(true);
+        JScrollPane jScrollPane = new JScrollPane(table);
+        swiftGui.add(jScrollPane);
+
+        swiftGui.setProperties();
+
+    }
+
+
+    public void populateTable(File[] mt940Dir) {
 
         String[][] fileContent;
 
@@ -43,39 +54,34 @@ public class TableBuilder {
 
             int i = 0;
             for(File f: mt940Dir){
-                BufferedReader reader = new BufferedReader(new FileReader(f.getAbsolutePath()));
-                String line = reader.readLine();
-                int j = 0;
+                BufferedReader reader;
+                try {
+                    reader = new BufferedReader(new FileReader(f.getAbsolutePath()));
+                    String line = reader.readLine();
+                    int j = 0;
 
-                fileContent[i][j] = f.getName();
-                j++;
-                while(line != null){
-
-                    fileContent[i][j] = line;
+                    fileContent[i][j] = f.getName();
                     j++;
-                    line = reader.readLine();
+                    while(line != null){
+
+                        fileContent[i][j] = line;
+                        j++;
+                        line = reader.readLine();
+                    }
+                    i++;
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                i++;
+
             }
 
         }
 
         tableData = fileContent;
 
-
     }
 
-    public void buildTableView() {
 
-
-        table = new JTable(tableData, columnNames);
-        table.setAutoCreateRowSorter(true);
-        table.setPreferredScrollableViewportSize(new Dimension(500  ,300));
-        table.setFillsViewportHeight(true);
-        JScrollPane jScrollPane = new JScrollPane(table);
-        swiftGui.add(jScrollPane);
-
-        swiftGui.setProperties();
-
-    }
 }

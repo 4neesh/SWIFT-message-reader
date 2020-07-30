@@ -44,7 +44,7 @@ public class ApplicationTest {
         Mockito.when(mt.getMessages(".")).thenReturn(emptyMessage);
 
         //when
-        //swiftGui.buildData(mt.getMessages("."));
+        //swiftGui.populateTable(mt.getMessages("."));
 
         //then
         //assertEquals(swiftGui.tableData[0][0], swiftGui.NO_FILE_MESSAGE);
@@ -62,7 +62,7 @@ public class ApplicationTest {
         MessageType mt = Mockito.mock(MessageType.class);
         Mockito.when(mt.getMessages(".")).thenReturn(populatedMessage);
 
-        //swiftGui.buildData(mt.getMessages("."));
+        //swiftGui.populateTable(mt.getMessages("."));
 
        // assertEquals(swiftGui.tableData[0][0], "Aneesh");
 

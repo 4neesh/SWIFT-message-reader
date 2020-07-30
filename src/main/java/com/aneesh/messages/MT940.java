@@ -1,6 +1,6 @@
 package com.aneesh.messages;
 
-public class SwiftMessage {
+public class MT940 {
 
 
 }

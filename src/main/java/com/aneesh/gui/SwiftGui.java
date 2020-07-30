@@ -10,11 +10,10 @@ public class SwiftGui extends JFrame {
     //singleton design
 
     private static SwiftGui guiSingleton = null;
-    private static JTable table;
     private static int guiWidth = 600;
     private static int guiHeight = 400;
     public static TableBuilder tableBuilder;
-    private String[] columnNames;
+    private static String[] columnNames;
 
     private SwiftGui(){
     }

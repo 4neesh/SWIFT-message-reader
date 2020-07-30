@@ -1,5 +1,9 @@
 package com.aneesh.builder;
 
+import com.aneesh.gui.SwiftGui;
+
+import javax.swing.*;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -7,10 +11,11 @@ import java.io.IOException;
 
 public class TableBuilder {
 
+    private static JTable table;
     public String[] columnNames;
     public static final String NO_FILE_MESSAGE= "No files to display";
     public String [][] tableData;
-
+    public SwiftGui swiftGui = SwiftGui.getGuiSingleton();
 
 
     public String[] defineColumnNames() {
@@ -60,5 +65,17 @@ public class TableBuilder {
 
     }
 
+    public void buildTableView() {
 
+
+        table = new JTable(tableData, columnNames);
+        table.setAutoCreateRowSorter(true);
+        table.setPreferredScrollableViewportSize(new Dimension(500  ,300));
+        table.setFillsViewportHeight(true);
+        JScrollPane jScrollPane = new JScrollPane(table);
+        swiftGui.add(jScrollPane);
+
+        swiftGui.setProperties();
+
+    }
 }

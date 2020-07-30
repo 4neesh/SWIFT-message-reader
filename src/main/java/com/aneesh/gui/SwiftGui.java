@@ -37,7 +37,7 @@ public class SwiftGui extends JFrame {
         return guiSingleton;
     }
 
-    private void setProperties() {
+    public void setProperties() {
         guiSingleton.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         guiSingleton.setSize(guiWidth,guiHeight);
         guiSingleton.setVisible(true);
@@ -46,19 +46,7 @@ public class SwiftGui extends JFrame {
 
     }
 
-    public void buildTableView() {
 
-
-        table = new JTable(tableBuilder.tableData, columnNames);
-        table.setAutoCreateRowSorter(true);
-        table.setPreferredScrollableViewportSize(new Dimension(500  ,300));
-        table.setFillsViewportHeight(true);
-        JScrollPane jScrollPane = new JScrollPane(table);
-        add(jScrollPane);
-
-        setProperties();
-
-    }
 
 }
 

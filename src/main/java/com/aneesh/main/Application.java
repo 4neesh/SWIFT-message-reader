@@ -22,7 +22,7 @@ public class Application {
         System.out.println(new Date() + "   Building the table in GUI...");
         swiftGui.buildTable();
 
-        swiftGui.buildData(mt940Dir);
+        swiftGui.tableBuilder.buildData(mt940Dir);
 
         System.out.println(new Date() + "   Populating table with file information...");
         swiftGui.buildTableView();

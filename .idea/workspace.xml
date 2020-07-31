@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d34c6e-dc9e-472c-8335-79889c38ba79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fileOne.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fileThree.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fileTwo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hello.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,13 +44,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+            <state relative-caret-position="566">
+              <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2396#2865#0" expanded="true" />
-                <element signature="e#2864#2865#0" expanded="true" />
-                <element signature="e#3873#3874#0" expanded="true" />
+                <element signature="e#2396#2944#0" expanded="true" />
+                <element signature="e#2943#2944#0" expanded="true" />
+                <element signature="e#4252#4253#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -264,7 +258,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596212931391" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596214440093" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
@@ -568,13 +562,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        <state relative-caret-position="566">
+          <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2396#2865#0" expanded="true" />
-            <element signature="e#2864#2865#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
+            <element signature="e#2396#2944#0" expanded="true" />
+            <element signature="e#2943#2944#0" expanded="true" />
+            <element signature="e#4252#4253#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -79,19 +79,18 @@ public class TableBuilder {
 
                         @Override
                         public void mouseClicked(MouseEvent e) {
-
-
+                            if(e.getClickCount() ==2){
                             try{
-                                Desktop.getDesktop().open(new File((String)file.getAbsolutePath()));
+                                Desktop.getDesktop().open(new File(file.getAbsolutePath()));
                             }
                             catch(IOException ex){
                                 ex.printStackTrace();
                             }
+                            }
                         }
                     });
-                    
-                    fileContent[row][col] = file.getName();
 
+                    fileContent[row][col] = file.getName();
 
 
                     col++;
@@ -101,6 +100,18 @@ public class TableBuilder {
 
                         line = reader.readLine();
                     }
+
+                    //populate null values as {NOT FOUND}
+                    for(int i = 0; i<columnNames.length; i++){
+
+                        if(fileContent[row][i]!= null){
+                        }else{
+                            fileContent[row][i] = "{NO VALUE}";
+                        }
+
+                    }
+
+
                     row++;
 
                 } catch (FileNotFoundException e) {

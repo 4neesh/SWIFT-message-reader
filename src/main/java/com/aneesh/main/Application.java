@@ -24,7 +24,7 @@ public class Application {
         swiftGui.tableBuilder.populateTable(mt940Dir);
 
         System.out.println(new Date() + "   Populating table with file information...");
-        swiftGui.tableBuilder.buildTableView();
+        swiftGui.tableBuilder.setTableView();
 
     }
 

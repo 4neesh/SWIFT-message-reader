@@ -27,7 +27,7 @@ public class TableBuilder {
         return columnNames;
     }
 
-    public void buildTableView() {
+    public void setTableView() {
 
         table = new JTable(tableData, columnNames);
         table.setAutoCreateRowSorter(true);
@@ -43,14 +43,15 @@ public class TableBuilder {
 
     public void populateTable(File[] mt940Dir) {
 
-        String[][] fileContent;
+        String[][] fileContent = new String[0][];
 
-        if(mt940Dir.length == 0){
-            fileContent = new String[1][1];
-            fileContent[0][0] = NO_FILE_MESSAGE;
+        if(noFilesFound(mt940Dir)){
+
+            setEmptyTable(fileContent);
+
         }
         else{
-            fileContent = new String[mt940Dir.length][7];
+            fileContent = new String[mt940Dir.length][columnNames.length];
 
             int i = 0;
             for(File f: mt940Dir){
@@ -81,6 +82,14 @@ public class TableBuilder {
 
         tableData = fileContent;
 
+    }
+
+    private boolean noFilesFound(File[] mt940Dir) {
+        return mt940Dir.length == 0;
+    }
+    private void setEmptyTable(String[][] fileContent){
+        fileContent = new String[1][1];
+        fileContent[0][0] = NO_FILE_MESSAGE;
     }
 
 

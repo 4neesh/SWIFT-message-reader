@@ -10,7 +10,7 @@ public class SwiftGui extends JFrame {
     //singleton design
 
     private static SwiftGui guiSingleton = null;
-    private static int guiWidth = 600;
+    private static int guiWidth = 800;
     private static int guiHeight = 400;
     public static TableBuilder tableBuilder;
     private static String[] columnNames;
@@ -40,7 +40,7 @@ public class SwiftGui extends JFrame {
         guiSingleton.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         guiSingleton.setSize(guiWidth,guiHeight);
         guiSingleton.setVisible(true);
-        guiSingleton.setTitle("SWIFT Reader");
+        guiSingleton.setTitle("MT Reader");
 
 
     }

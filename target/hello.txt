@@ -1,3 +1,0 @@
-28C:hello
-60F:world
-61F:this i s

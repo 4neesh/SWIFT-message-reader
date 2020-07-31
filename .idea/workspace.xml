@@ -3,16 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="39d34c6e-dc9e-472c-8335-79889c38ba79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileOne.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/fileOne.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileThree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/fileThree.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTwo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/fileTwo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/hello.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/main/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/main/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/messages/SwiftMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/reader/MessageTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/fileOne.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/fileThree.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/fileTwo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hello.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="310">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="223">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,12 +50,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+            <state relative-caret-position="476">
+              <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2351#2352#0" expanded="true" />
-                <element signature="e#2386#2387#0" expanded="true" />
+                <element signature="e#2396#2865#0" expanded="true" />
+                <element signature="e#2864#2865#0" expanded="true" />
+                <element signature="e#3873#3874#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,13 +125,15 @@
         <option value="$PROJECT_DIR$/MT940/fileTwo.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/MessageType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/SwiftGui.java" />
-        <option value="$PROJECT_DIR$/fileOne.txt" />
-        <option value="$PROJECT_DIR$/hello.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/reader/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/builder/GuiBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/aneesh/reader/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT940.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java" />
+        <option value="$PROJECT_DIR$/fileOne.txt" />
+        <option value="$PROJECT_DIR$/fileThree.txt" />
+        <option value="$PROJECT_DIR$/fileTwo.txt" />
+        <option value="$PROJECT_DIR$/hello.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" />
       </list>
@@ -149,8 +148,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="699" />
+    <option name="width" value="1920" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -251,6 +250,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="reader" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SwiftReaderMvn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SWIFT-message-reader" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -260,7 +264,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596177323061" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596212931391" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
@@ -269,8 +273,8 @@
       <recent name="$PROJECT_DIR$/MT940" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/target" />
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
@@ -419,11 +423,11 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="699" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7988981" visible="true" weight="0.25040388" />
-      <window_info id="Structure" order="1" sideWeight="0.20110193" side_tool="true" visible="true" weight="0.25040388" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85536546" visible="true" weight="0.16506922" />
+      <window_info id="Structure" order="1" sideWeight="0.14463453" side_tool="true" visible="true" weight="0.16506922" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -431,7 +435,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919955" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40197694" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27508456" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990981" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,34 +469,6 @@
     <entry file="file://$PROJECT_DIR$/config.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/fileOne.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/fileThree.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/fileTwo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/hello.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/aneesh/reader/SwiftGuiTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -518,30 +494,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/MessageTable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MessageType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT101.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -555,21 +528,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT101.java">
+    <entry file="file://$PROJECT_DIR$/fileOne.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileTwo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileThree.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="476">
+          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
-            <element signature="e#2386#2387#0" expanded="true" />
+            <element signature="e#2396#2865#0" expanded="true" />
+            <element signature="e#2864#2865#0" expanded="true" />
+            <element signature="e#3873#3874#0" expanded="true" />
           </folding>
         </state>
       </provider>

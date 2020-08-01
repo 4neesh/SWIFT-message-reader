@@ -3,6 +3,7 @@ package com.aneesh.builder;
 import com.aneesh.gui.SwiftGui;
 
 import javax.swing.*;
+import javax.swing.table.TableCellRenderer;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -43,33 +44,25 @@ public class TableBuilder {
         return columnNames;
     }
 
-    public void setTableView() {
-
-
+    public void setTableProperties() {
 
         table = new JTable(tableData, columnNames);
-        table.setAutoCreateRowSorter(true);
-        table.setPreferredScrollableViewportSize(new Dimension(tableWidth,tableHeight));
-        table.setFillsViewportHeight(true);
+
+        setTableSort();
+        setTableScrollSize();
+        setTableFillViewPort();
+        table.setDefaultRenderer(String.class, new tableRender());
         JScrollPane jScrollPane = new JScrollPane(table);
 
-        table.addMouseMotionListener(new MouseMotionListener() {
-            @Override
-            public void mouseDragged(MouseEvent e) {
+        addTableCursorListener();
+        addTableFileOpener();
 
-            }
+        swiftGui.add(jScrollPane);
+        swiftGui.setProperties();
 
-            @Override
-            public void mouseMoved(MouseEvent e) {
-                int col = table.columnAtPoint(e.getPoint());
-                if(col == 0){
-                    table.setCursor(new Cursor(Cursor.HAND_CURSOR));
-                }
-                else{
-                    table.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-                }
-            }
-        });
+    }
+
+    private void addTableFileOpener() {
         table.addMouseListener(new MouseAdapter() {
 
             @Override
@@ -87,11 +80,38 @@ public class TableBuilder {
                 }
             }
         });
+    }
 
-        swiftGui.add(jScrollPane);
+    private void addTableCursorListener() {
+        table.addMouseMotionListener(new MouseMotionListener() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
 
-        swiftGui.setProperties();
+            }
 
+            @Override
+            public void mouseMoved(MouseEvent e) {
+                int col = table.columnAtPoint(e.getPoint());
+                if(col == 0){
+                    table.setCursor(new Cursor(Cursor.HAND_CURSOR));
+                }
+                else{
+                    table.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+                }
+            }
+        });
+    }
+
+    private void setTableFillViewPort() {
+        table.setFillsViewportHeight(true);
+    }
+
+    private void setTableScrollSize() {
+        table.setPreferredScrollableViewportSize(new Dimension(tableWidth,tableHeight));
+    }
+
+    private void setTableSort() {
+        table.setAutoCreateRowSorter(true);
     }
 
 
@@ -171,4 +191,24 @@ public class TableBuilder {
     }
 
 
+}
+
+class tableRender extends JLabel implements TableCellRenderer{
+
+    public tableRender(){
+        System.out.println("SR");
+        super.setOpaque(true);
+    }
+    @Override
+    public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+
+        String val = value.toString();
+        System.out.println(val);
+        System.out.println(val.substring(val.length()-4));
+        if(val.substring(val.length()-4).equals(".txt")){
+            super.setForeground(Color.BLUE);
+        }
+
+        return this;
+    }
 }

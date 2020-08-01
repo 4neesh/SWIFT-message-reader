@@ -17,6 +17,7 @@ public class TableBuilder {
     public String [][] tableData;
     public SwiftGui swiftGui = SwiftGui.getGuiSingleton();
     private static HashMap<String, Integer> tags;
+    private static int columnNumbers;
 
     public String[] defineColumnNames() {
         tags = new HashMap<String, Integer>();
@@ -34,6 +35,7 @@ public class TableBuilder {
         tags.put("64:", 4);
         tags.put("52A", 5);
         tags.put("57A", 6);
+        columnNumbers = columnNames.length;
 
         return columnNames;
     }
@@ -62,7 +64,7 @@ public class TableBuilder {
 
         }
         else{
-            fileContent = new String[mt940Dir.length][columnNames.length];
+            fileContent = new String[mt940Dir.length][columnNumbers];
 
             int row = 0;
             for(final File file: mt940Dir){
@@ -92,7 +94,6 @@ public class TableBuilder {
 
                     fileContent[row][col] = file.getName();
 
-
                     col++;
                     while(line != null){
 
@@ -101,8 +102,7 @@ public class TableBuilder {
                         line = reader.readLine();
                     }
 
-                    //populate null values as {NOT FOUND}
-                    for(int i = 0; i<columnNames.length; i++){
+                    for(int i = 0; i<columnNumbers; i++){
 
                         if(fileContent[row][i]!= null){
                         }else{

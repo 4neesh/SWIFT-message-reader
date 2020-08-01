@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 import java.io.*;
 import java.util.HashMap;
 
@@ -18,6 +19,8 @@ public class TableBuilder {
     public SwiftGui swiftGui = SwiftGui.getGuiSingleton();
     private static HashMap<String, Integer> tags;
     private static int columnNumbers;
+    private int tableHeight = 300;
+    private int tableWidth = 700;
 
     public String[] defineColumnNames() {
         tags = new HashMap<String, Integer>();
@@ -42,11 +45,49 @@ public class TableBuilder {
 
     public void setTableView() {
 
+
+
         table = new JTable(tableData, columnNames);
         table.setAutoCreateRowSorter(true);
-        table.setPreferredScrollableViewportSize(new Dimension(700  ,300));
+        table.setPreferredScrollableViewportSize(new Dimension(tableWidth,tableHeight));
         table.setFillsViewportHeight(true);
         JScrollPane jScrollPane = new JScrollPane(table);
+
+        table.addMouseMotionListener(new MouseMotionListener() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseMoved(MouseEvent e) {
+                int col = table.columnAtPoint(e.getPoint());
+                if(col == 0){
+                    table.setCursor(new Cursor(Cursor.HAND_CURSOR));
+                }
+                else{
+                    table.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+                }
+            }
+        });
+        table.addMouseListener(new MouseAdapter() {
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int col = table.columnAtPoint(e.getPoint());
+                if(col == 0){
+
+                    int r = table.getSelectedRow();
+                    try {
+                        Desktop.getDesktop().open(new File("/Users/aneesh/Documents/Development/Java/SWIFT_reader/SWIFT-message-reader/" + table.getValueAt(r, 0)));
+
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            }
+        });
+
         swiftGui.add(jScrollPane);
 
         swiftGui.setProperties();
@@ -74,23 +115,6 @@ public class TableBuilder {
                     String line = reader.readLine();
                     int col = 0;
 
-                    JLabel fileHyperlink = new JLabel(file.getName());
-                    fileHyperlink.setForeground(Color.BLUE.darker());
-                    fileHyperlink.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-                    fileHyperlink.addMouseListener( new MouseAdapter() {
-
-                        @Override
-                        public void mouseClicked(MouseEvent e) {
-                            if(e.getClickCount() ==2){
-                            try{
-                                Desktop.getDesktop().open(new File(file.getAbsolutePath()));
-                            }
-                            catch(IOException ex){
-                                ex.printStackTrace();
-                            }
-                            }
-                        }
-                    });
 
                     fileContent[row][col] = file.getName();
 

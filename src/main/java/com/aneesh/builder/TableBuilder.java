@@ -79,7 +79,7 @@ public class TableBuilder {
 
                     int r = table.getSelectedRow();
                     try {
-                        Desktop.getDesktop().open(new File("/Users/aneesh/Documents/Development/Java/SWIFT_reader/SWIFT-message-reader/" + table.getValueAt(r, 0)));
+                        Desktop.getDesktop().open(new File("./" + table.getValueAt(r, 0)));
 
                     } catch (IOException e1) {
                         e1.printStackTrace();

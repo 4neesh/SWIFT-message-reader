@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d34c6e-dc9e-472c-8335-79889c38ba79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder.class" afterDir="false" />
-    </list>
+    <list default="true" id="39d34c6e-dc9e-472c-8335-79889c38ba79" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,11 +42,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+            <state relative-caret-position="-397">
+              <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4475#4476#0" expanded="true" />
+                <element signature="e#1644#2247#0" expanded="true" />
+                <element signature="e#2246#2247#0" expanded="true" />
+                <element signature="e#4729#4730#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,10 +138,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="699" />
+    <option name="width" value="1920" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -259,7 +256,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596270483309" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596294984841" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
@@ -421,8 +418,8 @@
     <frame x="0" y="23" width="1280" height="699" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79614323" visible="true" weight="0.25040388" />
-      <window_info id="Structure" order="1" sideWeight="0.20385675" side_tool="true" visible="true" weight="0.25040388" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7988981" visible="true" weight="0.25040388" />
+      <window_info id="Structure" order="1" sideWeight="0.20110193" side_tool="true" visible="true" weight="0.25040388" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -563,11 +560,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        <state relative-caret-position="-397">
+          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4475#4476#0" expanded="true" />
+            <element signature="e#1644#2247#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#4729#4730#0" expanded="true" />
           </folding>
         </state>
       </provider>

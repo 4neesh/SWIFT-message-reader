@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d34c6e-dc9e-472c-8335-79889c38ba79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/CustomTableRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/CustomTableRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aneesh/main/EvenOddRowCellRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/builder/CustomTableRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/builder/CustomTableRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/aneesh/builder/TableBuilder.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="435">
+              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="29">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,27 +51,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2713">
-              <caret line="198" column="33" lean-forward="true" selection-start-line="198" selection-start-column="33" selection-end-line="198" selection-end-column="33" />
+            <state relative-caret-position="255">
+              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1795#2311#0" expanded="true" />
-                <element signature="e#2310#2311#0" expanded="true" />
+                <element signature="e#3388#3904#0" expanded="true" />
+                <element signature="e#3903#3904#0" expanded="true" />
                 <element signature="e#2796#2797#0" expanded="true" />
                 <element signature="e#2846#2847#0" expanded="true" />
                 <element signature="e#2859#2860#0" expanded="true" />
                 <element signature="e#2909#2910#0" expanded="true" />
-                <element signature="e#5156#5157#0" expanded="true" />
+                <element signature="e#5314#5315#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MessageType.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/CustomTableRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,19 +80,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT940.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MessageType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT101.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#311#484#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,6 +108,12 @@
     <findStrings>
       <find>table</find>
       <find>getTable</find>
+      <find>sr</find>
+      <find>defineColumnNames</find>
+      <find>defineCol</find>
+      <find>define</find>
+      <find>setTab</find>
+      <find>setTablePro</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,13 +138,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/builder/GuiBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/aneesh/reader/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT940.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java" />
         <option value="$PROJECT_DIR$/fileOne.txt" />
         <option value="$PROJECT_DIR$/fileThree.txt" />
         <option value="$PROJECT_DIR$/fileTwo.txt" />
         <option value="$PROJECT_DIR$/hello.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/messages/MessageType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/main/EvenOddRowCellRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aneesh/builder/CustomTableRenderer.java" />
       </list>
     </option>
   </component>
@@ -263,7 +276,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596298111673" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596361222370" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
@@ -305,8 +318,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.aneesh.reader.MyTable" />
+    <configuration name="EvenOddRowCellRenderer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aneesh.main.EvenOddRowCellRenderer" />
       <module name="SwiftReaderMvn" />
       <extension name="coverage">
         <pattern>
@@ -369,10 +382,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.EvenOddRowCellRenderer" />
         <item itemvalue="JUnit.ApplicationTest" />
         <item itemvalue="JUnit.ApplicationTest.populatedTableIfFiles" />
         <item itemvalue="JUnit.ApplicationTest.emptyTableIfNoFiles" />
-        <item itemvalue="Application.MyTable" />
       </list>
     </recent_temporary>
   </component>
@@ -422,11 +435,11 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="699" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7988981" visible="true" weight="0.25040388" />
-      <window_info id="Structure" order="1" sideWeight="0.20110193" side_tool="true" visible="true" weight="0.25040388" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85536546" visible="true" weight="0.16506922" />
+      <window_info id="Structure" order="1" sideWeight="0.14463453" side_tool="true" visible="true" weight="0.16506922" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -434,7 +447,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919955" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40197694" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27508456" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990981" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -493,30 +506,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/reader/MessageTable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT101.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT940.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fileOne.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -545,37 +534,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT101.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MT940.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#311#484#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/gui/SwiftGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/main/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/main/EvenOddRowCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/TableBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2713">
-          <caret line="198" column="33" lean-forward="true" selection-start-line="198" selection-start-column="33" selection-end-line="198" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1795#2311#0" expanded="true" />
-            <element signature="e#2310#2311#0" expanded="true" />
+            <element signature="e#3388#3904#0" expanded="true" />
+            <element signature="e#3903#3904#0" expanded="true" />
             <element signature="e#2796#2797#0" expanded="true" />
             <element signature="e#2846#2847#0" expanded="true" />
             <element signature="e#2859#2860#0" expanded="true" />
             <element signature="e#2909#2910#0" expanded="true" />
-            <element signature="e#5156#5157#0" expanded="true" />
+            <element signature="e#5314#5315#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/messages/MessageType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aneesh/builder/CustomTableRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -3,6 +3,7 @@ package com.aneesh.builder;
 import com.aneesh.gui.SwiftGui;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -13,18 +14,25 @@ import java.util.HashMap;
 
 public class TableBuilder {
 
-    private static JTable table;
+    //to do
+    //make this singleton
+    //work out design pattern on even odd row cell renderer
+    //apply to this for better visual
+
+    public static JTable table;
     public String[] columnNames;
     public static final String NO_FILE_MESSAGE= "No files to display";
-    public String [][] tableData;
+    public static final String NO_VALUE = "{NO VALUE}";
+    public Object [][] tableData;
     public SwiftGui swiftGui = SwiftGui.getGuiSingleton();
     private static HashMap<String, Integer> tags;
     private static int columnNumbers;
     private int tableHeight = 300;
     private int tableWidth = 700;
+    private static int row = 0;
+    private static DefaultTableModel model;
 
-    public String[] defineColumnNames() {
-        tags = new HashMap<String, Integer>();
+    public void defineColumnNames() {
         columnNames = new String[7];
         columnNames[0] = "Filename";
         columnNames[1] = "Account (25)";
@@ -33,25 +41,23 @@ public class TableBuilder {
         columnNames[4] = "Closing (64)";
         columnNames[5] = "BIC (52a)";
         columnNames[6] = "BIC (57a)";
-        tags.put("25:", 1);
-        tags.put("28C", 2);
-        tags.put("60A", 3);
-        tags.put("64:", 4);
-        tags.put("52A", 5);
-        tags.put("57A", 6);
+
         columnNumbers = columnNames.length;
 
-        return columnNames;
+
     }
 
     public void setTableProperties() {
 
-        table = new JTable(tableData, columnNames);
+
+        setDefaultModel();
+
+        table = new JTable(model);
 
         setTableSort();
         setTableScrollSize();
         setTableFillViewPort();
-        table.setDefaultRenderer(String.class, new tableRender());
+        table.setDefaultRenderer(Object.class, new CustomTableRenderer());
         JScrollPane jScrollPane = new JScrollPane(table);
 
         addTableCursorListener();
@@ -61,6 +67,79 @@ public class TableBuilder {
         swiftGui.setProperties();
 
     }
+
+    private void setDefaultModel() {
+
+        defineColumnNames();
+        model = new DefaultTableModel(tableData, columnNames);
+
+    }
+
+    public void populateTable(File[] mt940Dir) {
+
+        String[][] fileContent = new String[0][];
+
+        if(noFilesFound(mt940Dir)){
+            setEmptyTable(fileContent);
+        }
+        else{
+            fileContent = new String[mt940Dir.length][columnNumbers];
+
+
+            for(final File file: mt940Dir){
+
+                processFileIntoTable(file, fileContent);
+
+            }
+
+        }
+
+        tableData = fileContent;
+
+    }
+
+    private void processFileIntoTable(File file, String[][] fileContent) {
+
+
+        BufferedReader reader;
+
+        try {
+            reader = new BufferedReader(new FileReader(file.getAbsolutePath()));
+            String line = reader.readLine();
+            int col = 0;
+
+
+            fileContent[row][col] = file.getName();
+
+            col++;
+            while(line != null){
+
+                populateTableWithLine(line, fileContent, row);
+
+                line = reader.readLine();
+            }
+
+            for(int i = 0; i<columnNumbers; i++){
+
+                if(fileContent[row][i]!= null){
+                }else{
+                    fileContent[row][i] = NO_VALUE;
+                }
+
+            }
+
+
+            row++;
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
 
     private void addTableFileOpener() {
         table.addMouseListener(new MouseAdapter() {
@@ -115,62 +194,6 @@ public class TableBuilder {
     }
 
 
-    public void populateTable(File[] mt940Dir) {
-
-        String[][] fileContent = new String[0][];
-
-        if(noFilesFound(mt940Dir)){
-
-            setEmptyTable(fileContent);
-
-        }
-        else{
-            fileContent = new String[mt940Dir.length][columnNumbers];
-
-            int row = 0;
-            for(final File file: mt940Dir){
-                BufferedReader reader;
-                try {
-                    reader = new BufferedReader(new FileReader(file.getAbsolutePath()));
-                    String line = reader.readLine();
-                    int col = 0;
-
-
-                    fileContent[row][col] = file.getName();
-
-                    col++;
-                    while(line != null){
-
-                        populateTableWithLine(line, fileContent, row);
-
-                        line = reader.readLine();
-                    }
-
-                    for(int i = 0; i<columnNumbers; i++){
-
-                        if(fileContent[row][i]!= null){
-                        }else{
-                            fileContent[row][i] = "{NO VALUE}";
-                        }
-
-                    }
-
-
-                    row++;
-
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-            }
-
-        }
-
-        tableData = fileContent;
-
-    }
 
     private void populateTableWithLine(String line, String[][] fileContent, int row) {
         String key = line.substring(0,3);
@@ -190,25 +213,15 @@ public class TableBuilder {
         fileContent[0][0] = NO_FILE_MESSAGE;
     }
 
+    public TableBuilder(){
+        tags = new HashMap<String, Integer>();
 
-}
-
-class tableRender extends JLabel implements TableCellRenderer{
-
-    public tableRender(){
-        System.out.println("SR");
-        super.setOpaque(true);
-    }
-    @Override
-    public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-
-        String val = value.toString();
-        System.out.println(val);
-        System.out.println(val.substring(val.length()-4));
-        if(val.substring(val.length()-4).equals(".txt")){
-            super.setForeground(Color.BLUE);
-        }
-
-        return this;
+        tags.put("25:", 1);
+        tags.put("28C", 2);
+        tags.put("60A", 3);
+        tags.put("64:", 4);
+        tags.put("52A", 5);
+        tags.put("57A", 6);
     }
 }
+

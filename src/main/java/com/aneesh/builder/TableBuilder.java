@@ -14,11 +14,6 @@ import java.util.HashMap;
 
 public class TableBuilder {
 
-    //to do
-    //make this singleton
-    //work out design pattern on even odd row cell renderer
-    //apply to this for better visual
-
     public static JTable table;
     public String[] columnNames;
     public static final String NO_FILE_MESSAGE= "No files to display";
@@ -27,10 +22,21 @@ public class TableBuilder {
     public SwiftGui swiftGui = SwiftGui.getGuiSingleton();
     private static HashMap<String, Integer> tags;
     private static int columnNumbers;
-    private int tableHeight = 300;
-    private int tableWidth = 700;
+    private int tableHeight = (int)Math.round(SwiftGui.guiHeight * 0.9);
+    private int tableWidth = (int)Math.round(SwiftGui.guiWidth * 0.9);
     private static int row = 0;
     private static DefaultTableModel model;
+
+    public TableBuilder(){
+        tags = new HashMap<String, Integer>();
+
+        tags.put("25:", 1);
+        tags.put("28C", 2);
+        tags.put("60A", 3);
+        tags.put("64:", 4);
+        tags.put("52A", 5);
+        tags.put("57A", 6);
+    }
 
     public void defineColumnNames() {
         columnNames = new String[7];
@@ -213,15 +219,6 @@ public class TableBuilder {
         fileContent[0][0] = NO_FILE_MESSAGE;
     }
 
-    public TableBuilder(){
-        tags = new HashMap<String, Integer>();
 
-        tags.put("25:", 1);
-        tags.put("28C", 2);
-        tags.put("60A", 3);
-        tags.put("64:", 4);
-        tags.put("52A", 5);
-        tags.put("57A", 6);
-    }
 }
 

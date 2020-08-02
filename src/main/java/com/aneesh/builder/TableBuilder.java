@@ -22,6 +22,7 @@ public class TableBuilder {
     public static JTable table;
     public String[] columnNames;
     public static final String NO_FILE_MESSAGE= "No files to display";
+    public static final String NO_VALUE = "{NO VALUE}";
     public Object [][] tableData;
     public SwiftGui swiftGui = SwiftGui.getGuiSingleton();
     private static HashMap<String, Integer> tags;
@@ -122,7 +123,7 @@ public class TableBuilder {
 
                 if(fileContent[row][i]!= null){
                 }else{
-                    fileContent[row][i] = "{NO VALUE}";
+                    fileContent[row][i] = NO_VALUE;
                 }
 
             }

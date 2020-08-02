@@ -6,19 +6,19 @@ import java.awt.*;
 
 public class CustomTableRenderer implements TableCellRenderer {
 
-    public CustomTableRenderer(){
-        System.out.println("tableRenderConstructor");
-    }
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
 
         JTextField editor = new JTextField();
+                
+        if(value != null){
+            editor.setText(value.toString());
+            if(value.toString().equals(TableBuilder.NO_VALUE)){
+                editor.setForeground(Color.GRAY);
+            }
+        }
 
-        editor.setForeground(Color.RED);
-        String val = value.toString();
-        System.out.println(val);
-        System.out.println(val.substring(val.length()-4));
-        if(val.substring(val.length()-4).equals(".txt")){
+        if(column==0){
             editor.setForeground(Color.BLUE);
         }
 

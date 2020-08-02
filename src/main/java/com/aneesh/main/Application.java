@@ -21,9 +21,12 @@ public class Application {
         System.out.println(new Date() + "   Creating the table frame...");
         swiftGui.buildTable();
 
-        swiftGui.tableBuilder.populateTable(mt940Dir);
+
 
         System.out.println(new Date() + "   Populating table with file information...");
+        swiftGui.tableBuilder.populateTable(mt940Dir);
+
+
         swiftGui.tableBuilder.setTableProperties();
 
     }

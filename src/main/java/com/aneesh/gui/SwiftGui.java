@@ -7,13 +7,10 @@ import java.awt.*;
 
 public class SwiftGui extends JFrame {
 
-    //singleton design
-
     private static SwiftGui guiSingleton = null;
     private static int guiWidth = 800;
     private static int guiHeight = 400;
     public static TableBuilder tableBuilder;
-    private static String[] columnNames;
 
     private SwiftGui(){
     }
@@ -22,7 +19,7 @@ public class SwiftGui extends JFrame {
 
         setLayout(new FlowLayout());
 
-        columnNames = tableBuilder.defineColumnNames();
+        tableBuilder.defineColumnNames();
 
     }
 
@@ -41,7 +38,8 @@ public class SwiftGui extends JFrame {
         guiSingleton.setSize(guiWidth,guiHeight);
         guiSingleton.setVisible(true);
         guiSingleton.setTitle("MT Reader");
-
+        getContentPane().add(new JScrollPane(tableBuilder.table), BorderLayout.CENTER);
+        pack();
 
     }
 

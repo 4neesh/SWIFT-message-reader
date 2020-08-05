@@ -1,12 +1,10 @@
 package com.aneesh.gui;
 
 import com.aneesh.builder.TableBuilder;
-import sun.plugin2.message.Message;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import java.awt.*;
-import java.text.MessageFormat;
 
 public class SwiftGui extends JFrame {
 

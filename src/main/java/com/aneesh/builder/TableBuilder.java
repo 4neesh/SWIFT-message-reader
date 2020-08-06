@@ -202,12 +202,14 @@ public class TableBuilder {
 
 
     private void populateTableWithLine(String line, String[][] fileContent, int row) {
-        String key = line.substring(0,4);
-        String content = line.substring(4);
-        content = content.replace(":", "");
+        if(line.length() > 4) {
+            String key = line.substring(0, 4);
+            String content = line.substring(4);
+            content = content.replace(":", "");
 
-        if(tags.containsKey(key)){
-            fileContent[row][tags.get(key)] = content;
+            if (tags.containsKey(key)) {
+                fileContent[row][tags.get(key)] = content;
+            }
         }
     }
 

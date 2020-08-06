@@ -9,7 +9,7 @@ import java.awt.*;
 public class SwiftGui extends JFrame {
 
     private static SwiftGui guiSingleton = null;
-    public static int guiWidth = 900;
+    public static int guiWidth = 1200;
     public static int guiHeight = 400;
     public static TableBuilder tableBuilder;
 

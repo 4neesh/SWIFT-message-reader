@@ -30,23 +30,23 @@ public class TableBuilder {
     public TableBuilder(){
         tags = new HashMap<String, Integer>();
 
-        tags.put("25:", 1);
-        tags.put("28C", 2);
-        tags.put("60A", 3);
-        tags.put("64:", 4);
-        tags.put("52A", 5);
-        tags.put("57A", 6);
+        tags.put(":20:", 1);
+        tags.put(":25:", 2);
+        tags.put(":28C", 3);
+        tags.put(":60F", 4);
+        tags.put(":64:", 5);
+        tags.put(":62F", 6);
     }
 
     public void defineColumnNames() {
         columnNames = new String[7];
         columnNames[0] = "Filename";
-        columnNames[1] = "Account (25)";
-        columnNames[2] = "Sequence (28c)";
-        columnNames[3] = "Opening (60a)";
-        columnNames[4] = "Closing (64)";
-        columnNames[5] = "BIC (52a)";
-        columnNames[6] = "BIC (57a)";
+        columnNames[1] = "Sender Reference (20)";
+        columnNames[2] = "Account Number (25)";
+        columnNames[3] = "Sequence (28C)";
+        columnNames[4] = "Opening (60F)";
+        columnNames[5] = "Closing (64)";
+        columnNames[6] = "Current balance (62F)";
 
         columnNumbers = columnNames.length;
 
@@ -202,12 +202,14 @@ public class TableBuilder {
 
 
     private void populateTableWithLine(String line, String[][] fileContent, int row) {
-        String key = line.substring(0,3);
-        String content = line.substring(3);
-        content = content.replace(":", "");
+        if(line.length() > 4) {
+            String key = line.substring(0, 4);
+            String content = line.substring(4);
+            content = content.replace(":", "");
 
-        if(tags.containsKey(key)){
-            fileContent[row][tags.get(key)] = content;
+            if (tags.containsKey(key)) {
+                fileContent[row][tags.get(key)] = content;
+            }
         }
     }
 
